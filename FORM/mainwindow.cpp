@@ -64,5 +64,11 @@ void MainWindow::on_clientButton_clicked()
     tcpClient->show();
 }
 
+void MainWindow::on_sendFileButton_clicked()
+{
+    tcpSender = new TcpSender;
+    tcpSender->show();
+}
+
 
 

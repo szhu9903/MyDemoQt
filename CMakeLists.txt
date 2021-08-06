@@ -23,6 +23,7 @@ set(
         FORM/http_demo/httpdemo.cpp
         FORM/http_demo/tcpsocket.cpp
         FORM/http_demo/tcpclient.cpp
+        FORM/http_demo/tcpsender.cpp
         FORM/sql_demo/qtsql.cpp
         FORM/sql_demo/sqldialog.cpp
         SOURCE/db_help/dbconnect.cpp
@@ -37,6 +38,7 @@ set(
         FORM/http_demo/httpdemo.h
         FORM/http_demo/tcpsocket.h
         FORM/http_demo/tcpclient.h
+        FORM/http_demo/tcpsender.h
         FORM/sql_demo/qtsql.h
         FORM/sql_demo/sqldialog.h
         SOURCE/db_help/dbconnect.h
@@ -51,6 +53,7 @@ set(
         FORM/http_demo/httpdemo.ui
         FORM/http_demo/tcpsocket.ui
         FORM/http_demo/tcpclient.ui
+        FORM/http_demo/tcpsender.ui
         FORM/sql_demo/qtsql.ui
         FORM/sql_demo/sqldialog.ui)
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS} ${UI})

@@ -4,8 +4,9 @@
 TcpSocket::TcpSocket(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::TcpSocket)
+    //执行父类构造函数创建类对象ui
 {
-    ui->setupUi(this);
+    ui->setupUi(this); //实现窗口的生成与各种属性的设置、信号与槽的关联
     tcpServer = new QTcpServer(this);
     if(!tcpServer->listen(QHostAddress::LocalHost, 6666))
     {

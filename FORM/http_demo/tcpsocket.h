@@ -23,6 +23,7 @@ class TcpSocket;
 
 class TcpSocket : public QWidget
 {
+    // 宏，使用信号和槽必须加入这个宏
     Q_OBJECT
 
 public:
@@ -34,7 +35,7 @@ public:
     void set_str(QByteArray & block, QString & data_str);
 
 private:
-    Ui::TcpSocket *ui;
+    Ui::TcpSocket *ui; //指针ui,对象
 
     QTcpServer *tcpServer;
     qint8 blogLen;

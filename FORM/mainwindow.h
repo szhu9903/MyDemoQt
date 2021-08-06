@@ -10,6 +10,7 @@
 #include "FORM/sql_demo/qtsql.h"
 #include "FORM/http_demo/tcpsocket.h"
 #include "FORM/http_demo/tcpclient.h"
+#include "FORM/http_demo/tcpsender.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -32,6 +33,7 @@ public:
     HttpDemo *http;
     TcpSocket *tcpSocket;
     TcpClient *tcpClient;
+    TcpSender *tcpSender;
 
 private:
     Ui::MainWindow *ui;
@@ -45,6 +47,7 @@ private slots:
     void on_httpButton_clicked();
     void on_tcpButton_clicked();
     void on_clientButton_clicked();
+    void on_sendFileButton_clicked();
 
 };
 #endif // MAINWINDOW_H

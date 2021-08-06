@@ -21,7 +21,8 @@ SOURCES += \
     SOURCE/db_help/dbconnect.cpp \
     SOURCE/db_help/dbconnectpool.cpp \
     FORM/http_demo/tcpsocket.cpp \
-    FORM/http_demo/tcpclient.cpp
+    FORM/http_demo/tcpclient.cpp \
+    FORM/http_demo/tcpsender.cpp
 
 HEADERS += \
     FORM/mainwindow.h \
@@ -35,7 +36,8 @@ HEADERS += \
     SOURCE/db_help/dbconnectpool.h \
     FORM/http_demo/httpdemo.h \
     FORM/http_demo/tcpsocket.h \
-    FORM/http_demo/tcpclient.h
+    FORM/http_demo/tcpclient.h \
+    FORM/http_demo/tcpsender.h
 
 FORMS += \
     FORM/mainwindow.ui \
@@ -47,7 +49,8 @@ FORMS += \
     FORM/sql_demo/sqldialog.ui \
     FORM/http_demo/httpdemo.ui \
     FORM/http_demo/tcpsocket.ui \
-    FORM/http_demo/tcpclient.ui
+    FORM/http_demo/tcpclient.ui \
+    FORM/http_demo/tcpsender.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
