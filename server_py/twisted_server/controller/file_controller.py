@@ -43,6 +43,7 @@ def comm_file_data_req(message):
             # 保存文件
             with open("CMakeCache.txt", "w") as file:
                 file.write(fileData['data'])
+            del file_data[file_key] # 保存文件后清除缓存
         time.sleep(0.5)
         message["PROTOCOL"].transport.write(bytes([1]))
     except Exception as Err:

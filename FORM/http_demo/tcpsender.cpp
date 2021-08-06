@@ -89,6 +89,7 @@ void TcpSender::readData()
         qDebug() << "保存数据失败";
     if (fileKey.shortData == 0)
     {
+        // 栈存储
         fileKey.dataBytes[1] = (quint8) data[1];
         fileKey.dataBytes[0] = (quint8) data[2];
         qDebug() << fileKey.shortData;
