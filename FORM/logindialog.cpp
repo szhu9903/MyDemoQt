@@ -7,6 +7,8 @@ LoginDialog::LoginDialog(QWidget *parent) :
 {
     ui->setupUi(this);
     setWindowTitle(tr("访问认证"));
+    ui->name_edit->setPlaceholderText("admin");
+    ui->pwd_edit->setPlaceholderText("admin");
 }
 
 LoginDialog::~LoginDialog()
@@ -29,6 +31,5 @@ void LoginDialog::on_login_btn_clicked()
         ui->name_edit->clear(); //  清空输入框
         ui->pwd_edit->clear();
         ui->name_edit->setFocus(); // 光标定位到文本框
-        accept();// 测试密码错误正常登录
     }
 }
